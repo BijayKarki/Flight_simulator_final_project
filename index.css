@@ -1,0 +1,58 @@
+#app {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#sidebar {
+  flex: 1;
+  width: 100%;
+}
+
+#map {
+  flex: 4;
+  height: 500px;
+}
+
+#game_details {
+  margin: 2rem 0;
+}
+
+.game_info {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#origin,
+#destination {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+#travelForm {
+  margin: 2rem 0;
+}
+
+#travelForm > label {
+  font-size: 0.9rem;
+}
+
+.form_input {
+  padding: 0.5rem 0.2rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.form_button {
+  padding: 0.5rem;
+  background-color: #4caf50;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto 0.5rem auto;
+}

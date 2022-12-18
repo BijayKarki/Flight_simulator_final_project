@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title>Flight Game</title>
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src='https://unpkg.com/leaflet-arc/bin/leaflet-arc.min.js'></script>
+  <body>
+    <div id="app">
+      <div id="sidebar">
+        <section id="game_details">
+          <p class="game_info">Player: <span id="player"></span></p>
+          <p class="game_info">Battery: <progress id="battery" value="32" max="100"></progress></p>
+          <p class="game_info">Distance travelled: <span id="totalDistance"></span> KM</p>
+          <p class="game_info">Goals achieved: <span id="weatherGoals"></span></p>
+        </section>
+        <hr>
+
+        <form id="travelForm">
+          <label for="origin">Origin airport:</label>
+          <input class="form_input" type="text" id="origin" name="origin" placeholder="Enter origin airport's ICOA">
+          <label for="destination">Destination airport:</label>
+          <input class="form_input" type="text" id="destination" name="destination" placeholder="Enter destination airport's ICOA">
+          <button class="form_button" type="submit">Start journey</button>
+        </form>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
